@@ -24,7 +24,7 @@ public class TestClass {
 
     @Saver(saveMany = true)
     public static boolean saveMany(TestClass...tcs){
-        System.out.println("Save many..." + System.lineSeparator());
+        System.out.println("Save many...");
         for (TestClass tc: tcs){
             System.out.println(tc);
         }
@@ -34,7 +34,7 @@ public class TestClass {
 
     @Saver(saveMany = false)
     public boolean saveOne(){
-        System.out.println("Save one..." + System.lineSeparator());
+        System.out.println("Save one...");
         System.out.println(this);
         return  true;
     }

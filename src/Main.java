@@ -25,9 +25,14 @@ public class Main {
                     params[2] = tcObj3;
                     boolean result = (Boolean) method.invoke(null, new Object[]{params});
                     System.out.println("Result: "+result);
-                }/*else{
-
-                }*/
+                }else {
+                    boolean result = (Boolean) method.invoke(tcObj1);
+                    System.out.println("Result: "+result);
+                    result = (Boolean) method.invoke(tcObj2);
+                    System.out.println("Result: "+result);
+                    result = (Boolean) method.invoke(tcObj3);
+                    System.out.println("Result: "+result);
+                }
 
             }
         }
